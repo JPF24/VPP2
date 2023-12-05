@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta http-equiv="Conteempant-Type" content="text/html; charset=utf-8" />
+  <title>Tu Comida.com</title>
+  <link rel="shortcut icon" href="./images/Logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <link rel="stylesheet" href="./js/menuDiario.js">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div id="container">
+    <div id="top">
+      <div id="menuInicial">
+        <ul>
+          <li><a href="index.html" class="active">Inicio</a></li>
+          <li><a onclick="openMenu(event, 'menu')" href="#menu">Menú_Diario </a></li>
+          <li><a onclick="openMenu(event, 'sandwich')" href="#sandwich">Sandwiches</a></li>
+          <li><a onclick="openMenu(event, 'empanada')" href="#empanada">Empanadas</a></li>
+          <li><a onclick="openMenu(event, 'pizza')" href="#pizza">Pizzas</a></li>
+          <li><a href="#bottom-container">Contacto</a></li>
+        </ul>
+      </div>
+      <div id="fotoInicial">
+        <img src="./images/menuSlider.png" alt="">
+      </div>
+    </div>
+  </div>
+  <!--end top -->
+  <div id="content">
+    <div class="center">
+      <img src="images/Linea.jpg" alt="" />
+    </div>
+    <!-- cuatro columnas top -->
+    <div class="yp">
+      <h2>Menú diario</h2>
+      <p class="chico">Solo lo mejor en tu mesa.</p>
+      <p>Preparados con los más frescos y mejores ingredientes.</p>
+      <div class="clrXV"></div>
+      <!--<a class="button_col" href="menuDiario.html"><span>encontra tu almuerzo o cena aquí</span></a>-->
+      <a class="button_col" onclick="openMenu(event, 'menu')" id="defaultOpen"><span>encontra tu almuerzo o cena
+          aquí</span></a>
+    </div>
+
+    <div class="yp">
+      <h2>Sandwiches</h2>
+      <p class="chico">Los mejores sandwiches</p>
+      <p>Todos vienen con papas fritas y los más frescos aderezos que prefieras... </p>
+      <div class="clrXV"></div>
+      <!--<a class="button_col" href="sandwiches.html"><span>Eleguí el sandwichs que más te guste...</span></a>-->
+      <a class="button_col" onclick="openMenu(event, 'sandwich')"><span>Eleguí el sandwichs que más te
+          guste...</span></a>
+    </div>
+
+    <div class="yp">
+      <h2>Empanadas</h2>
+      <p class="chico">Para quienes saben de empanadas...</p>
+      <p>Elaboradas artesanalmente, llevalas fritas o al horno.</p>
+      <div class="clrXV"></div>
+      <!--<a class="button_col" href="empanadas.html"><span>de Carne, pollo o queso ?</span></a>-->
+      <a class="button_col" onclick="openMenu(event, 'empanada')"><span>de Carne, pollo o queso ?</span></a>
+    </div>
+
+    <div class="yp">
+      <h2>Pizzas</h2>
+      <p class="chico">La verdadera pizza casera</p>
+      <p>
+        Elaboración propia y con ingredientes naturales. La mejor pizza a la
+        piedra.
+      </p>
+      <div class="clrXV"></div>
+      <!--<a class="button_col" href="pizzas.html"><span>Descubrí todas nuestras variedades...</span></a>-->
+      <a class="button_col" onclick="openMenu(event, 'pizza')"><span>Descubrí todas nuestras variedades...</span></a>
+    </div>
+    <div class="clrX"></div>
+    <div class="center">
+      <img src="images/Linea.jpg" alt="" />
+    </div>
+  </div>
+  <!-- *************************************************************** -->
+  <div id="menu" class="tabcontent">
+    <div id="content">
+      <div class="center">
+        <h5>Menú Diario</h5>
+        <img src="images/Linea.jpg" alt="" />
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <div class="contentCard">
+          <div class="tCard">
+            <h2>Arrollado de Pollo</h2>
+          </div>
+          <img src="./images/imgMenu/arrollado de pollo.png" alt="" />
+          <div class="desc">
+            <h6>2 guarniciones + pan + postre</h6>
+          </div>
+          <div class="importe">
+            <h5>$ 2.900,00</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="contentCard">
+          <div class="tCard">
+            <h2>Bife de Pollo</h2>
+          </div>
+          <img src="./images/imgMenu/bife de pollo.png" alt="" />
+          <div class="desc">
+            <h6>2 guarniciones + pan + postre</h6>
+          </div>
+          <div class="importe">
+            <h5>$ 2.500,00</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="contentCard">
+          <div class="tCard">
+            <h2>Bomba de Carne</h2>
+          </div>
+          <img src="./images/imgMenu/bomba de carne.png" alt="" />
+          <div class="desc">
+            <h6>2 guarniciones + pan + postre</h6>
+          </div>
+          <div class="importe">
+            <h5>$ 2.500,00</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="contentCard">
+          <div class="tCard">
+            <h2>Canelones de Verdura</h2>
+          </div>
+          <img src="./images/imgMenu/canelones de verdura.png" alt="" />
+          <div class="desc">
+            <h6>Salsa + pan + postre</h6>
+          </div>
+          <div class="importe">
+            <h5>$ 2.300,00</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="contentCard">
+          <div class="tCard">
+            <h2>Costeleta de Cerdo</h2>
+          </div>
+          <img src="./images/imgMenu/costeleta de cerdo.png" alt="" />
+          <div class="desc">
+            <h6>2 guarniciones + pan + postre</h6>
+          </div>
+          <div class="importe">
+            <h5>$ 2.400,00</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="contentCard">
+          <div class="tCard">
+            <h2>Hamburguesa Mapolitana</h2>
+          </div>
+          <img src="./images/imgMenu/hamburguesa napolitana.png" alt="" />
+          <div class="desc">
+            <h6>2 guarniciones + pan + postre</h6>
+          </div>
+          <div class="importe">
+            <h5>$ 2.400,00</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="contentCard">
+          <div class="tCard">
+            <h2>Lasagna de Carne</h2>
+          </div>
+          <img src="./images/imgMenu/lasagna de carne.png" alt="" />
+          <div class="desc">
+            <h6>pan + postre</h6>
+          </div>
+          <div class="importe">
+            <h5>$ 2.500,00</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="contentCard">
+          <div class="tCard">
+            <h2>Milanesa</h2>
+          </div>
+          <img src="./images/imgMenu/mila carne.png" alt="" />
+          <div class="desc">
+            <h6>2 guarniciones + pan + postre</h6>
+          </div>
+          <div class="importe">
+            <h5>$ 2.600,00</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="contentCard">
+          <div class="tCard">
+            <h2>Milanesa de Merluza</h2>
+          </div>
+          <img src="./images/imgMenu/mila de merluza.png" alt="" />
+          <div class="desc">
+            <h6>2 guarniciones + pan + postre</h6>
+          </div>
+          <div class="importe">
+            <h5>$ 2.500,00</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="contentCard">
+          <div class="tCard">
+            <h2>Milanesa Napolitana</h2>
+          </div>
+          <img src="./images/imgMenu/mila napolitana.png" alt="" />
+          <div class="desc">
+            <h6>2 guarniciones + pan + postre</h6>
+          </div>
+          <div class="importe">
+            <h5>$ 2.600,00</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="contentCard">
+          <div class="tCard">
+            <h2>Pollo al Horno</h2>
+          </div>
+          <img src="./images/imgMenu/pollo al horno.png" alt="" />
+          <div class="desc">
+            <h6>Salsa a elección + 2 guarniciones + pan + postre</h6>
+          </div>
+          <div class="importe">
+            <h5>$ 1.500,00</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="contentCard">
+          <div class="tCard">
+            <h2>Sorrentinos</h2>
+          </div>
+          <img src="./images/imgMenu/sorrentinos.png" alt="" />
+          <div class="desc">
+            <h6>Salsa + pan + postre</h6>
+          </div>
+          <div class="importe">
+            <h5>$ 2.300,00</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="contentCard">
+          <div class="tCard">
+            <h2>Supremas Rellenas</h2>
+          </div>
+          <img src="./images/imgMenu/supremas rellenas.png" alt="" />
+          <div class="desc">
+            <h6>2 guarniciones + pan + postre</h6>
+          </div>
+          <div class="importe">
+            <h5>$ 2.700,00</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="contentCard">
+          <div class="tCard">
+            <h2>Tarta de Pollo</h2>
+          </div>
+          <img src="./images/imgMenu/tarta de pollo.png" alt="" />
+          <div class="desc">
+            <h6>Guarnición + pan + postre</h6>
+          </div>
+          <div class="importe">
+            <h5>$ 2.500,00</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- Guarniciones: ARROZ - PURE DE PAPA O MIXTO- PAPAS FRITAS - FIDEOS AL PESTO - ENSALADA MIXTA - TOMATES CON HUEVO - ENSALADA CRIIOLLA -->
+      <div class="card">
+        <div class="contentCard">
+          <div class="tCard">
+            <h2>GUARNICIONES</h2>
+          </div>
+          <div>
+            <h5>
+              ARROZ - PURE DE PAPA O MIXTO- PAPAS FRITAS - FIDEOS AL PESTO -
+              ENSALADA MIXTA - TOMATES CON HUEVO - ENSALADA CRIIOLLA
+            </h5>
+          </div>
+          <div class="importe">
+            <h6>
+              Todos nuestros productos son elaboradeos en el día, con las
+              mejores y más frescas materias primas.
+            </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="sandwich" class="tabcontent">
+    <div id="content">
+      <div class="center">
+        <h5>Sandwiches</h5>
+        <img src="images/Linea.jpg" alt="" />
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <div class="contentCard">
+          <div class="tCard">
+            <h2>Hamburguesa</h2>
+          </div>
+          <img src="./images/imgSandw/Sand hambur.png" alt="" />
+          <div class="desc">
+            <h6>Ponele los aderezos que quieras</h6>
+          </div>
+          <div class="importe">
+            <h5>$ 2.000,00</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="contentCard">
+          <div class="tCard">
+            <h2>Milanesa</h2>
+          </div>
+          <img src="./images/imgSandw/Sand mila.png" alt="" />
+          <div class="desc">
+            <h6>Ponele los aderezos que quieras</h6>
+          </div>
+          <div class="importe">
+            <h5>$ 2.500,00</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="contentCard">
+          <div class="tCard">
+            <h2>Lomito</h2>
+          </div>
+          <img src="./images/imgSandw/Sand lomito.png" alt="" />
+          <div class="desc">
+            <h6>Ponele los aderezos que quieras</h6>
+          </div>
+          <div class="importe">
+            <h5>$ 2.500,00</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="contentCard">
+          <div class="tCard">
+            <h2>Bondiola de Cerdo</h2>
+          </div>
+          <img src="./images/imgSandw/Sand bondiola.png" alt="" />
+          <div class="desc">
+            <h6>Ponele los aderezos que quieras</h6>
+          </div>
+          <div class="importe">
+            <h5>$ 2.500,00</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="empanada" class="tabcontent">
+    <div id="content">
+      <div class="center">
+        <h5>Empanadas</h5>
+        <img src="images/Linea.jpg" alt="" />
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <div class="contentCard">
+          <div class="tCard">
+            <h2>de carne</h2>
+          </div>
+          <img src="./images/imgEmp/empanadas.png" alt="" />
+          <div class="desc">
+            <h6>Por docena</h6>
+          </div>
+          <div class="importe">
+            <h5>$ 2.500,00</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="contentCard">
+          <div class="tCard">
+            <h2>de pollo</h2>
+          </div>
+          <img src="./images/imgEmp/empanadas.png" alt="" />
+          <div class="desc">
+            <h6>Por docena</h6>
+          </div>
+          <div class="importe">
+            <h5>$ 2.500,00</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="contentCard">
+          <div class="tCard">
+            <h2>de queso</h2>
+          </div>
+          <img src="./images/imgEmp/empanadas.png" alt="" />
+          <div class="desc">
+            <h6>Por docena</h6>
+          </div>
+          <div class="importe">
+            <h5>$ 2.500,00</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="contentCard">
+          <div class="tCard">
+            <h2>Fritas</h2>
+          </div>
+          <img src="./images/imgEmp/empanadas_fritas.png" alt="" />
+          <div class="desc">
+            <h6>De Carne, Pollo o Queso</h6>
+          </div>
+          <div class="importe">
+            <h5>$ 2.500,00</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="pizza" class="tabcontent">
+    <div id="content">
+      <div class="center">
+        <h5>Pizzas</h5>
+        <img src="images/Linea.jpg" alt="" />
+      </div>
+    </div>
+    <div class="cards">
+      <div class="cardPizza">
+        <div class="contentCardPizza">
+
+          <div class="pizza">
+            <h1>variedades</h1>
+
+            <ul>
+              <li>
+                <h3>Especial $2.500,00</h3>
+              </li>
+              <li>
+                <h3>cuatro quesos $2.500,00</h3>
+              </li>
+              <li>
+                <h3>napolitana $2.500,00</h3>
+              </li>
+              <li>
+                <h3>margarita $2.500,00</h3>
+              </li>
+              <li>
+                <h3>champiñones $2.500,00</h3>
+              </li>
+              <li>
+                <h3>fugazza $2.500,00</h3>
+              </li>
+              <li>
+                <h3>Palmitos $2.500,00</h3>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openMenu(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+  </script>
+  <!-- tres columnas top -->
+  <div id="content">
+    <div class="yyyf" id="title-footer">
+      <h2 style="border: none; padding-bottom: 20px">Promociones</h2>
+    </div>
+
+    <div class="yp">
+      <h2>Tarjetas Crédito y Débito</h2>
+      <p>Recibimos todas las tarjetas de crédito y débito.</p>
+      <div class="clrXV"></div>
+    </div>
+
+    <div class="yp">
+      <h2>Promo 20% dcto</h2>
+      <p>Comprando 2 Pizzas y abonando al contado obtené un<strong>20% de descuento.</strong></p>
+      <div class="clrXV"></div>
+    </div>
+
+    <div class="yp">
+      <h2>Promo 10% dcto</h2>
+      <p>Por la compra de 2 o más docenas de empanadas, en efectivo, tenés<strong> 10% dcto.</strong></p>
+      <div class="clrXV"></div>
+    </div>
+
+    <div class="clrX"></div>
+  </div>
+  <!-- footer -->
+  <div class="contentfooter" id="footer">
+    <div id="bottom-container">
+      <div id="bottom">
+        <h2>Mapa del Sitio</h2>
+      </div>
+    </div>
+
+    <div class="yp" id="sitemaplist" style="overflow: hidden">
+      <h2>Secciones</h2>
+      <ul>
+        <li><a href="index.html" class="active">Inicio</a></li>
+        <li><a onclick="openMenu(event, 'menu')" href="#menu">Menú Diario </a></li>
+        <li><a onclick="openMenu(event, 'sandwich')" href="#sandwich">Sandwiches</a></li>
+        <li><a onclick="openMenu(event, 'empanada')" href="#empanada">Empanadas</a></li>
+        <li><a onclick="openMenu(event, 'pizza')" href="#pizza">Pizzas</a></li>
+        <li><a href="#bottom-container">Contacto</a></li>
+      </ul>
+    </div>
+
+    <div class="yp" id="datoscontacto" style="overflow: hidden">
+      <h2>Contacto</h2>
+      <div class="clrX"></div>
+      <ul>
+        <li class="contAlig">
+          <p>
+            <svg class="icoContacto" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-house-door" viewBox="0 0 16 16">
+              <path
+                d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z" />
+            </svg>
+          </p>
+          <p>Belgrano 356</p>
+        </li>
+        <li class="contAlig">
+          <p>
+            <svg class="icoContacto" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-telephone" viewBox="0 0 16 16">
+              <path
+                d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+            </svg>
+          </p>
+          <p>(321) 222222</p>
+        </li>
+        <li class="contAlig">
+          <p>
+            <svg class="icoContacto" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-whatsapp" viewBox="0 0 16 16">
+              <path
+                d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+            </svg>
+          </p>
+          <p>+54 9 321 1111111</p>
+        </li>
+
+        <li class="contAlig">
+          <p><a class="mail" href="mailto: tucomida.com@gmail.com">
+              <svg class="icoContacto" xmlns="http://www.w3.org/2000/svg" align="left" width="16" height="16"
+                fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                <path
+                  d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+              </svg></a>
+          <p><a class="mail" href="mailto: tucomida.com@gmail.com">tucomida@gmail.com</a></p>
+        </li>
+
+        <li class="contAlig">
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook"
+              viewBox="0 0 16 16">
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+            </svg>
+          </p>
+          <p><a class="mail" href="https://www.facebook.com">TuComida.com</a></p>
+        </li>
+        <li class="contAlig">
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram"
+              viewBox="0 0 16 16">
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+            </svg>
+          </p>
+          <p><a class="mail" href="https://www.instagram.com">TuComida</a></p>
+        </li>
+        <li class="contAlig">
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x"
+              viewBox="0 0 16 16">
+              <path
+                d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z" />
+            </svg>
+          </p>
+          <p><a class="mail" href="https://www.twitter.com">TuComidaX</a></p>
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="ycc" id="sitemaplist" style="overflow: hidden">
+      <h2>Estamos aquí</h2>
+      <div class="mapgoogle">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.66627534492!2d-58.37381222486982!3d-34.6125994579662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3352ad313e8e3%3A0xae8c117e3b702c84!2sAv.%20Belgrano%20356%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1700002545324!5m2!1ses!2sar"
+          width="300" height="300" style="border: 0" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>  
+
+    <div class="ycc">
+      <div class="contact_form">
+        <div class="formulario">
+          <h2>Escríbenos y en breve nos pondremos en contacto</h2>
+
+          <form acción="https://formsubmit.co/juanpablofedeli@hotmail.com" método="POST" id="form">
+            <div>
+              <input name="name" required id="name" type="text" class="form-control" placeholder="Nombre"
+                maxlength="25">
+            </div>
+            <div>
+              <input name="email" required id="email" type="email" class="form-control" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <textarea name="message" required id="message" type="text" class="form-control" placeholder="Comentario"
+                cols="20" rows="5"></textarea>
+            </div>
+            </br>
+            <!--<button type="submit" id="btn-enviar" class="btn btn-success">Enviar Comentario</button>-->
+            <input type="submit" class="btn btn-success" id="button" value="Enviar Comentario">
+          </form>
+          <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+          <script type="text/javascript">
+            emailjs.init('sKAZD0zG06lC7rKz9')
+          </script>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="clr"></div>
+    <div id="bottom-container">
+      <div id="bottom">
+        <a>Copyright 2023 - TuComida.com </a>
+        <div class="clr"></div>
+        <a>VPP2 - Juan Pablo Fedeli - 29.586.224</a>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  </div>
+
+  <a onclick="return gtag_report_conversion('https://api.whatsapp.com/send?phone=5493514737721&amp;text=Hola%20TuComida.com!');"
+    href="https://api.whatsapp.com/send?phone=5493514737721&amp;text=Hola%20TuComida.com!" class="float"
+    target="_blank">
+    <i class="bi bi-whatsapp float"></i>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="../PP2-WEB/js/index.js"></script>
+
+  <script>
+    const btn = document.getElementById('button');
+
+    document.getElementById('form')
+      .addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        btn.value = 'Enviando...';
+
+        const serviceID = 'default_service';
+        const templateID = 'template_wlapod8';
+
+        emailjs.sendForm(serviceID, templateID, this)
+          .then(() => {
+            btn.value = 'Enviar Comentario';
+            alert('Se envió con éxito tu comentario!');
+          }, (err) => {
+            btn.value = 'Enviar Comentario';
+            alert(JSON.stringify(err));
+          });
+      });
+  </script>
+</body>
+
+</html>

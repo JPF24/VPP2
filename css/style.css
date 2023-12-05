@@ -1,0 +1,882 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css");
+
+.yc {
+  width: 180px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+  float: left;
+  margin-left: 20px;
+}
+
+.ycc {
+  width: 300px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+  float: left;
+  margin-left: 50px;
+}
+
+.contacto {
+  width: 100%;
+  padding-left: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.contact_form {
+  width: 460px;
+  height: auto;
+  border-radius: 10px;
+  padding: 32px;
+  background-color: #fbfbfb;
+  padding-left: 30px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  margin-bottom: 30px;
+}
+
+input {
+  background-color: #fbfbfb;
+  width: 395px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #000;
+  margin-top: 10px;
+  padding-left: 0px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  background-color: #fbfbfb;
+  width: 405px;
+  height: 150px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ab4493;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+}
+
+label {
+  display: block;
+  float: center;
+}
+
+button {
+  height: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: #ab4493;
+  border-color: #ab4493;
+  border-style: solid;
+  border-radius: 10px;
+  width: 405px;
+  cursor: pointer;
+}
+
+.formulario input:focus {
+  outline: 0;
+  border: 1px solid #97d848;
+}
+
+input[type="submit"] {
+  display: block;
+  padding: 6px 30px;
+  font-size: 14px;
+  background-color: #4460aa;
+  color: #fff;
+  border: none;
+}
+/*fin formulario*/
+html,
+body,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+img,
+strong,
+sub,
+sup,
+ol,
+ul,
+li,
+form,
+label,
+table,
+tr,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a img {
+  border: none;
+}
+/*Esquema de Cuartos*/
+.xf {
+  width: 240px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+  float: left;
+}
+
+.xxf {
+  width: 480px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+  float: left;
+}
+
+.xxxf {
+  width: 720px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+  float: left;
+}
+/*Esquema de Tercios*/
+.yf {
+  width: 320px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+  float: left;
+}
+
+.yyf {
+  width: 640px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+  float: left;
+}
+/*Esquema de Fila Completa*/
+.xxxxf,
+.yyyf {
+  width: 960px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+}
+/************************* PADDING (15px): agrega "p" ********************************/
+/*Esquema de Cuartos*/
+.xp {
+  width: 192px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin: 0px;
+  float: left;
+}
+
+.xxp {
+  width: 432px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin: 0px;
+  float: left;
+}
+
+.xxxp {
+  width: 672px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin: 0px;
+  float: left;
+}
+/*Esquema de Tercios*/
+.yp {
+  width: 260px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+  float: left;
+}
+
+.yyp {
+  width: 592px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin: 0px;
+  float: left;
+}
+/*Esquema de Fila Completa*/
+.xxxxp,
+.yyyp {
+  width: 960px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+}
+/************** MARGEN (15px): MARGIN en vez de PADDING: agrega "m" ****************/
+/*Esquema de Cuartos*/
+.xm {
+  width: 192px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px 24px;
+  float: left;
+  display: inline;
+}
+
+.xxm {
+  width: 432px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px 24px;
+  float: left;
+  display: inline;
+}
+
+.xxxm {
+  width: 672px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px 24px;
+  float: left;
+  display: inline;
+}
+/*Esquema de Tercios*/
+.ym {
+  width: 272px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px 24px;
+  float: left;
+  display: inline;
+}
+
+.yym {
+  width: 592px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px 24px;
+  float: left;
+  display: inline;
+}
+/*Esquema de Fila Completa*/
+.xxxxm,
+.yyym {
+  width: 912px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px 24px;
+}
+/*************************MODELO INTERIOR DEL #CONTENT********************************/
+/******************** completo (SIN PADDING NI MARGEN): agrega "f" **********************/
+/*Esquema de Cuartos*/
+#content .xf {
+  width: 228px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+  float: left;
+}
+
+#content .xxf {
+  width: 456px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+  float: left;
+}
+
+#content .xxxf {
+  width: 684px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+  float: left;
+}
+/*Esquema de Tercios*/
+#content .yf {
+  width: 304px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+  float: left;
+}
+
+#content .yyf {
+  width: 608px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+  float: left;
+}
+/*Esquema de Fila Completa*/
+#content .xxxxf,
+#content .yyyf {
+  width: 912px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+}
+/************************* PADDING (15px): agrega "p" ********************************/
+/*Esquema de Cuartos*/
+#content .xp,
+.content .xp {
+  width: 180px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin: 0px;
+  float: left;
+}
+
+#content .xxp,
+.content .xxp {
+  width: 408px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin: 0px;
+  float: left;
+}
+
+#content .xxxp,
+.content .xxxp {
+  width: 636px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin: 0px;
+  float: left;
+}
+/*Esquema de Tercios*/
+#content .yp,
+.content .yp {
+  width: 226px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin: 0px;
+  float: left;
+}
+
+#content .yyp,
+.content .yyp {
+  width: 560px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin: 0px;
+  float: left;
+}
+/*Esquema de Fila Completa*/
+#content .xxxxp,
+#content .yyyp,
+.content .xxxxp,
+.content .yyyp {
+  width: 960px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+}
+/************** MARGEN (15px): MARGIN en vez de PADDING: agrega "m" ******************/
+/*Esquema de Cuartos*/
+#content .xm,
+.content .xm {
+  width: 180px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px 24px;
+  float: left;
+}
+
+#content .xxm,
+.content .xxm {
+  width: 408px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px 24px;
+  float: left;
+}
+
+#content .xxxm,
+.content .xxxm {
+  width: 636px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px 24px;
+  float: left;
+}
+/*Esquema de Tercios*/
+#content .ym,
+.content .ym {
+  width: 256px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px 24px;
+  float: left;
+}
+
+#content .yym,
+.content .yym {
+  width: 560px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px 24px;
+  float: left;
+}
+/*Esquema de Fila Completa*/
+#content .xxxxm,
+#content .yyym,
+.content .xxxxm,
+.content .yyym {
+  width: 864px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px 24px;
+}
+/*CLEARS*/
+.clr {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.clrX {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 10px;
+}
+
+.clrXV {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 15px;
+}
+
+.clrXX {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 20px;
+}
+/*--------------------------------------------------------------------------------*/
+/*BOTONES*/
+a.button_col {
+  background: #d90f1b;
+  color: #ffeb86;
+  display: inline-block;
+  font-size: 11px;
+  /* height:30px;*/
+  margin-right: 5px;
+  margin-top: 0px;
+  padding-right: 17px;
+  text-transform: uppercase;
+  padding-top: 2px;
+  -moz-border-radius: 7px;
+  -web-border-radius: 7px;
+  border-radius: 7px;
+}
+
+a.button_col span {
+  background: transparent no-repeat scroll -2px -34px;
+  display: block;
+  line-height: 13px;
+  padding: 9px 0 11px 15px;
+  font-weight: bold;
+}
+
+a.button_col:hover {
+  background: #86e7ff;
+}
+
+a.button_col:hover span {
+  background: #86e7ff;
+  color: black;
+}
+
+a.mail {
+  color: black;
+}
+/*****************************LAYOUT*******************************/
+.center {
+  text-align: center;
+}
+
+#container {
+  width: 960px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+#footer {
+  width: 100%;
+  margin: 0px auto;
+  /*background:#FFF;*/
+  color: #5b5b5b;
+}
+
+#title-footer {
+  margin: 0px auto;
+  height: 40px;
+  background: black;
+}
+
+#bottom-container {
+  width: 100%;
+  background: #5b5b5b;
+  height: 100px;
+  background: center top no-repeat #cccccc;
+  text-align: center;
+}
+
+#bottom {
+  width: 100%;
+  background: black;
+}
+
+#bottom h2 {
+  color: #f8f8f4;
+}
+
+#bottom a {
+  color: white;
+}
+
+#title-footer h2 {
+  color: #f8f8f4;
+  padding-top: 05px;
+  padding-bottom: 15px;
+  padding-left: 50px;
+}
+
+.contentfooter {
+  width: 100%;
+  margin: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  background: #cccccc;
+}
+
+#content,
+.content {
+  width: 960px;
+  margin: 0px auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  background: #fff;
+}
+
+#copy {
+  text-align: center;
+  color: #5b5b5b;
+}
+/*TEXTOS*/
+body {
+  font: 12px Trebuchet MS, Helvetica, serif;
+  /*background:#AF0A0A;*/
+  background: center top repeat-y #cccccc;
+}
+
+a:focus {
+  outline: 1px dotted;
+  color: #c00;
+}
+
+hr {
+  border-color: #cccccc;
+  border-right: 0 solid #cccccc;
+  border-style: solid;
+  border-width: 1px 0 0;
+  clear: both;
+  height: 0;
+  padding-bottom: 9px;
+  padding-top: 5px;
+}
+/* Headings*/
+h1 {
+  color: white;
+  font-family: Trebuchet MS, Helvetica, serif;
+  font-size: 24px;
+  font-weight: normal;
+  /*letter-spacing:-1px;*/
+  padding-bottom: 7px;
+  padding-top: 10px;
+  text-transform: uppercase;
+  border-bottom: 0px solid #e3e3e3;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: rgb(216, 25, 25);
+}
+
+h2 {
+  color: #110f0f;
+  font-family: Trebuchet MS, Helvetica, serif;
+  font-size: 10px;
+  font-weight: normal;
+  /*letter-spacing:-1px;*/
+  padding-bottom: 7px;
+  padding-top: 10px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+p {
+  padding-top: 7px;
+  font-family: Trebuchet MS, Helvetica, serif;
+  font-size: 13px;
+}
+
+p.chico {
+  color: #878787;
+  font-size: 12px;
+}
+
+h3 {
+  font-family: Trebuchet MS, Helvetica, serif;
+  font-size: 25px;
+  background: #cccccc;
+  color: black;
+  text-align: left;
+}
+
+h4 {
+  font-size: 14px;
+  padding-bottom: 15px;
+}
+
+h5 {
+  font-family: Georgia;
+  font-size: 15px;
+  padding-bottom: 0;
+  padding-top: 10px;
+}
+
+h6 {
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+
+li {
+  padding: 0px;
+}
+/* más css */
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #43b899;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 37px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+  -webkit-text-size-adjust: 100%;
+}
+
+.icoContacto {
+  float: left;
+}
+
+#top {
+  background: url(../images/logoFondo.jpg) no-repeat center top;
+  height: 318px;
+  width: 960px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+#menuInicial {
+  width: 460px;
+  overflow: hidden;
+  float: left;
+  height: 318px;
+}
+
+#menuInicial ul {
+  float: left;
+  padding-top: 20px;
+  text-align: left;
+}
+
+#menuInicial li a {
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  /*line-height: 1.8;*/
+  color: #000;
+  display: inline-block;
+  padding: 3px 70px 3px 15px;
+  letter-spacing: -1px;
+  width: 120px;
+}
+
+#menuInicial ul li a:hover,
+#menuInicial ul li a.active {
+  background: #0d0d0e;
+  color: #fff;
+  padding: 3px 70px 3px 15px;
+  width: 120px;
+}
+
+#fotoInicial {
+  width: 500px;
+  overflow: hidden;
+  float: right;
+  height: 318px;
+  padding: 5px 10px 5px 25px;
+}
+
+#datoscontacto ul li {
+  display: inline-block;
+}
+
+#datoscontacto li img {
+  float: left;
+  padding-right: 8px;
+  width: 30px;
+  height: 30px;
+}
+
+#datoscontacto p {
+  float: left;
+  font-family: helvetica;
+  font-size: 12px;
+  letter-spacing: -1px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+}
+
+li.contAlig {
+  width: 150px;
+  height: 20px;
+}
+
+#sitemaplist {
+  padding-left: 24px;
+  margin: 0%;
+}
+
+#sitemaplist li {
+  border-bottom: solid 1px #cccccc;
+  list-style: none;
+  /*line-height:24px;*/
+}
+
+#sitemaplist a {
+  font-family: Arial, Helvetica;
+  color: #333333;
+  font-size: 13px;
+  padding: 3px 0px 3px 16px;
+  display: block;
+  width: 140px;
+  margin: 0;
+}
+
+#sitemaplist a:hover {
+  background: #741f1c;
+  color: #fff;
+}
+
+#servicios img {
+  padding-bottom: 7px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.card {
+  border: 1px solid black;
+  background-color: white;
+  color: rgb(224, 15, 15);
+  font-weight: bold;
+  line-height: 120px;
+  text-align: center;
+  margin: 5px;
+  padding: 10px;
+}
+
+.contentCard {
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 240px;
+  height: 330px;
+}
+
+.contentCard img {
+  padding: 5px;
+}
+
+.importe {
+  padding: 1px;
+  color: #000;
+}
+
+.tCard {
+  width: 240px;
+  height: 100px;
+}
+
+.desc {
+  width: 240px;
+  height: 30px;
+}
+
+.cardPizza {
+  background: url(../images/pizaSlider.png);
+  background-size: cover;
+  width: 940px;
+  width: 100%;
+}
+
+.pizza {
+  float: right;
+  padding-left: 40px;
+}
